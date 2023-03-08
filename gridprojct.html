@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas:
+            "title title"
+            "menu sidebar"
+            "content sidebar"
+            "footer footer";
+            height: 100vh;
+
+        }
+        .item1{
+            grid-area: title;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        
+        }
+        .item2{
+            grid-area:menu;
+            background-color:blue;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .item2 a{
+            color: white;
+        }
+        .item3{
+            grid-area: content;
+        }
+        .item4{
+            grid-area: sidebar;
+            background-color: blue;
+            color: white;
+        }
+        .item5{
+            grid-area: footer;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="item1">
+            <p>Title</p>
+            <hr>
+        </div>
+        <div class="item2">
+            
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            
+
+        </div>
+        <div class="item3">
+            <h1>heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis similique blanditiis, mollitia facilis magni libero eveniet odio totam ipsa velit dolor excepturi porro maiores repudiandae eligendi architecto consequatur! Tempore, aliquam.</p>
+        
+        </div>
+        <div class="item4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad sapiente fugit tenetur tempora repellat asperiores commodi rem nostrum sequi enim harum, laudantium nam autem tempore natus culpa! Nostrum, fugit.</p>
+        </div>
+        <div class="item5">
+            <p>closing notes</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
